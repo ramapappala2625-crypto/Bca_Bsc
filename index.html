@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Test Report</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blood Test Report</h1>
+    <p>Patient Name: <span id="patient-name">John Doe</span></p>
+    <p>Date: <span id="date">2023-02-20</span></p>
+
+    <table>
+        <tr>
+            <th>Test Name</th>
+            <th>Result</th>
+            <th>Unit</th>
+            <th>Normal Range</th>
+        </tr>
+        <tr>
+            <td>Hemoglobin (Hb)</td>
+            <td id="hb-result">14.5</td>
+            <td>g/dL</td>
+            <td>13.5-17.5</td>
+        </tr>
+        <tr>
+            <td>White Blood Cell Count (WBC)</td>
+            <td id="wbc-result">7.5</td>
+            <td>10^9/L</td>
+            <td>4.5-11.0</td>
+        </tr>
+        <tr>
+            <td>Red Blood Cell Count (RBC)</td>
+            <td id="rbc-result">5.2</td>
+            <td>10^12/L</td>
+            <td>4.32-5.72</td>
+        </tr>
+        <tr>
+            <td>Platelet Count</td>
+            <td id="platelet-result">250</td>
+            <td>10^9/L</td>
+            <td>150-450</td>
+        </tr>
+    </table>
+
+    <p>Interpretation: <span id="interpretation">Results are within normal limits.</span></p>
+</body>
+</html>
